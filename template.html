@@ -5,9 +5,65 @@
   <title>Template Email</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Solo para desarrollo, luego será inline */
-    @import url('style.css');
-  </style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Estructura principal */
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+    /* Tipografía general */
+    h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #666;
+    }
+    /* Clases de utilidad para email */
+    .stack {
+        display: block;
+        width: 100% !important;
+    }
+    .stack td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        padding-bottom: 10px !important;
+    }
+    /* Responsive para mobile */
+    @media only screen and (max-width: 600px) {
+        .container {
+        width: 100% !important;
+        }
+        .stack td {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        }
+        .hide-on-mobile {
+        display: none !important;
+        }
+        .full-width {
+        width: 100% !important;
+        display: block !important;
+        }
+    }
+   </style>
 </head>
 <body style="margin:0; padding:0; background-color:#f6f6f6;">
   <center>
@@ -31,7 +87,7 @@
                             <tr>
                                 <td align="center" style="font-family: Arial, sans-serif; color: #ffffff;">
                                 <span style="display: block; font-size: 36px; font-weight: bold; font-style: italic; line-height: 36px;">Defencarga</span>
-                                <span style="display: block; font-size: 14px; font-weight: normal; line-height: 18px;">Juntos por el país</span>
+                                <span style="display: block; font-size: 14px; font-weight: normal; line-height: 16px;">Juntos por el país</span>
                                 </td>
                             </tr>
                             
@@ -45,7 +101,7 @@
                                         <table cellpadding="0" cellspacing="0" border="0">
                                             <tr>
                                             <td valign="middle" style="padding-right: 6px;">
-                                                <img src="img/icon-publicaciones.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-publicaciones.png" alt="Publicaciones" width="20" height="20" style="display: block;">
                                             </td>
                                             <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
                                                 Publicaciones
@@ -61,7 +117,7 @@
                                         <table cellpadding="0" cellspacing="0" border="0">
                                             <tr>
                                             <td valign="middle" style="padding-right: 6px;">
-                                                <img src="img/icon-tablero.png" alt="Tablero" width="20" height="20" style="display: block;">
+                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-tablero.png" alt="Tablero" width="20" height="20" style="display: block;">
                                             </td>
                                             <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
                                                 Tablero de Control
@@ -77,7 +133,7 @@
                                         <table cellpadding="0" cellspacing="0" border="0">
                                             <tr>
                                             <td valign="middle" style="padding-right: 6px;">
-                                                <img src="img/icon-eventos.png" alt="Eventos" width="20" height="20" style="display: block;">
+                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Eventos" width="20" height="20" style="display: block;">
                                             </td>
                                             <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
                                                 Eventos y Memorias
@@ -103,7 +159,7 @@
                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #025e73; border-radius: 0 0 20px 20px;">
                                 <tr>
                                 <td align="center" style="padding: 30px 20px 0 20px;">
-                                    <img src="img/banner-fondo-feria.png" alt="Feria de Sostenibilidad 2025" width="560" style="width: 100%; max-width: 560px; border-radius: 20px; display: block;">
+                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/banner-fondo-feria.png" alt="Feria de Sostenibilidad 2025" width="560" style="width: 100%; max-width: 560px; border-radius: 20px; display: block;">
                                 </td>
                                 </tr>
                         
@@ -126,15 +182,15 @@
                                 <tr>
                                 <td align="left" style="padding: 20px 20px 40px 20px;">
                                     <!-- Botón -->
-                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
                                         <tr>
-                                            <td align="center" bgcolor="#EB773C" style="border-radius: 25px;">
-                                            <a href="#" style="display: inline-block; padding: 12px 20px; font-size: 14px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; font-weight: bold;">
-                                                Sigue leyendo →
+                                          <td align="left" style="padding: 10px 20px;">
+                                            <a href="#" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none;">
+                                              Sigue leyendo <span style="font-size: 16px;">→</span>
                                             </a>
-                                            </td>
+                                          </td>
                                         </tr>
-                                    </table>
+                                    </table>                                      
                                 </td>
                                 </tr>
                             </table>
@@ -165,7 +221,7 @@
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                 <td valign="top" width="50%" align="center">
-                    <img src="img/act-1.jpg" alt="Noticia 1" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-1.jpg" alt="Noticia 1" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
                 </td>
                 <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
                     <p style="margin: 0; font-weight: bold; line-height: 20px;">Ecopetrol pone en marcha una nueva planta para producir diésel más limpio</p>
@@ -188,7 +244,7 @@
                     <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
                 </td>
                 <td valign="top" width="50%" align="center">
-                    <img src="img/act-2.jpg" alt="Noticia 2" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-2.jpg" alt="Noticia 2" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
                 </td>
                 </tr>
             </table>
@@ -201,7 +257,7 @@
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                 <td valign="top" width="50%" align="center">
-                    <img src="img/act-3.jpg" alt="Noticia 3" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-3.jpg" alt="Noticia 3" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
                 </td>
                 <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
                     <p style="margin: 0; font-weight: bold; line-height: 20px;">Más de $19,2 billones de las vías 4G se quedarían en riesgo por proyectos en vilo</p>
@@ -286,7 +342,7 @@
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#34a3c1; border-radius: 20px; overflow: hidden;">
                                             <tr>
                                                 <td>
-                                                    <img src="img/oa-1.jpg" alt="Curso 1" width="100%" style="border-radius: 20px; display: block;">
+                                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/oa-1.jpg" alt="Curso 1" width="100%" style="border-radius: 20px; display: block;">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -294,7 +350,7 @@
                                                     <table cellpadding="0" cellspacing="0" border="0">
                                                         <tr>
                                                         <td style="padding-right: 6px;">
-                                                            <img src="img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
+                                                            <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
                                                         </td>
                                                         <td style="color: #ffffff; font-size: 14px;">Marzo 12, 2025</td>
                                                         </tr>
@@ -302,24 +358,15 @@
                         
                                                     <p style="margin: 16px 0 16px 0; font-weight: bold; line-height: 22px; font-size: 18px; color: #ffffff;">Diplomado en Gestión de la Cadena de Suministro</p>
                                     
-                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+                                                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
                                                         <tr>
-                                                            <td style="border-radius: 25px; background-color: #eb6a17;">
-                                                                <a href="#" style="display: block; text-decoration: none; padding: 10px 20px; font-family: Arial, sans-serif;">
-                                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td align="left" style="font-size: 14px; font-weight: bold; color: #ffffff;">
-                                                                                Inscripciones
-                                                                            </td>
-                                                                            <td align="right" style="font-size: 16px; color: #ffffff;">
-                                                                                →
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </a>
-                                                            </td>
+                                                          <td align="left" style="padding: 10px 20px;">
+                                                            <a href="#" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none;">
+                                                              Inscripciones <span style="font-size: 16px;">→</span>
+                                                            </a>
+                                                          </td>
                                                         </tr>
-                                                    </table>                                      
+                                                    </table>                                       
                                                 </td>
                                             </tr>
                                         </table>
@@ -330,7 +377,7 @@
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #34a3c1; border-radius: 20px; overflow: hidden;">
                                             <tr>
                                                 <td>
-                                                    <img src="img/oa-2.jpg" alt="Curso 2" width="100%" style="border-radius: 20px; display: block;">
+                                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/oa-2.jpg" alt="Curso 2" width="100%" style="border-radius: 20px; display: block;">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -338,7 +385,7 @@
                                                     <table cellpadding="0" cellspacing="0" border="0">
                                                         <tr>
                                                             <td style="padding-right: 6px;">
-                                                                <img src="img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
+                                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
                                                             </td>
                                                             <td style="color: #ffffff; font-size: 14px;">Junio 16, 2025</td>
                                                         </tr>
@@ -346,22 +393,13 @@
                             
                                                     <p style="margin: 16px 0 16px 0; font-weight: bold; line-height: 22px; font-size: 18px; color: #ffffff;">Curso de Operador Logístico en Puerto</p>
                             
-                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" align="left">
+                                                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
                                                         <tr>
-                                                            <td style="border-radius: 25px; background-color: #eb6a17;">
-                                                                <a href="#" style="display: block; text-decoration: none; padding: 10px 20px; font-family: Arial, sans-serif;">
-                                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                                        <tr>
-                                                                            <td align="left" style="font-size: 14px; font-weight: bold; color: #ffffff;">
-                                                                                Inscripciones
-                                                                            </td>
-                                                                            <td align="right" style="font-size: 16px; color: #ffffff;">
-                                                                                →
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </a>
-                                                            </td>
+                                                          <td align="left" style="padding: 10px 20px;">
+                                                            <a href="#" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none;">
+                                                              Inscripciones <span style="font-size: 16px;">→</span>
+                                                            </a>
+                                                          </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -425,19 +463,19 @@
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td style="padding: 0 8px;">
-                                        <a href="#"><img src="img/twitter.png" alt="Twitter" width="20" style="display: block;"></a>
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/twitter.png" alt="Twitter" width="20" style="display: block;"></a>
                                     </td>
                                     <td style="padding: 0 8px;">
-                                        <a href="#"><img src="img/instagram.png" alt="Instagram" width="20" style="display: block;"></a>
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/instagram.png" alt="Instagram" width="20" style="display: block;"></a>
                                     </td>
                                     <td style="padding: 0 8px;">
-                                        <a href="#"><img src="img/facebook.png" alt="Facebook" width="20" style="display: block;"></a>
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/facebook.png" alt="Facebook" width="20" style="display: block;"></a>
                                     </td>
                                     <td style="padding: 0 8px;">
-                                        <a href="#"><img src="img/youtube.png" alt="YouTube" width="20" style="display: block;"></a>
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/youtube.png" alt="YouTube" width="20" style="display: block;"></a>
                                     </td>
                                     <td style="padding: 0 8px;">
-                                        <a href="#"><img src="img/linkedin.png" alt="LinkedIn" width="20" style="display: block;"></a>
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/linkedin.png" alt="LinkedIn" width="20" style="display: block;"></a>
                                     </td>
                                 </tr>
                             </table>
