@@ -23,7 +23,6 @@
         margin: 0 auto;
         background-color: #ffffff;
     }
-    /* Tipografía general */
     h1 {
         font-size: 24px;
         color: #333;
@@ -85,6 +84,34 @@
 
         .icon-td {
             padding-bottom: 4px !important;
+        }
+        .noticia-responsive {
+            display: block !important;
+            width: 100% !important;
+        }
+        .noticia-responsive td {
+            display: block !important;
+            width: 90% !important;
+            max-width: 400px !important;
+            margin: 0 auto !important;
+            text-align: center !important;
+            padding: 12px 0 !important;
+        }
+        .noticia-responsive img {
+            border-radius: 12px !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .invert-mobile {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        .invert-mobile td {
+            width: 100% !important;
+            display: block !important;
+            text-align: center !important;
+            padding: 12px 0 !important;
         }
     }
    </style>
@@ -235,7 +262,7 @@
         </tr>
     
         <!-- NOTICIA 1 -->
-        <tr>
+        <tr class="noticia-responsive">
             <td align="center" style="padding: 20px 20px;">
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
@@ -253,10 +280,10 @@
         </tr>
         
         <!-- NOTICIA 2 -->
-        <tr>
+        <tr class="noticia-responsive">
             <td align="center" style="padding: 20px 10px;">
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
+                <tr class="invert-mobile">
                 <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
                     <p style="margin: 0; font-weight: bold; line-height: 20px;">Finalizan obras del túnel que permitirá poner en servicio la UF2 de la vía Pacífico 1</p>
                     <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Las obras del túnel que permitirá la puesta en servicio de la Unidad Funcional 2 (UF2) de la Autopista Conexión Pacífico 1 han finalizado.</p>
@@ -271,7 +298,7 @@
         </tr>
         
         <!-- NOTICIA 3 -->
-        <tr>
+        <tr class="noticia-responsive">
             <td align="center" style="padding: 20px 20px 40px 20px;">
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
