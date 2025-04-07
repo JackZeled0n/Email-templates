@@ -48,19 +48,43 @@
     /* Responsive para mobile */
     @media only screen and (max-width: 600px) {
         .container {
-        width: 100% !important;
+            width: 100% !important;
         }
         .stack td {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
         }
         .hide-on-mobile {
-        display: none !important;
+            display: none !important;
         }
         .full-width {
-        width: 100% !important;
-        display: block !important;
+            width: 100% !important;
+            display: block !important;
+        }
+        .menu-btn {
+            display: block !important;
+            width: 90% !important;
+            text-align: center !important;
+        }
+
+        .menu-table {
+            margin: 0 auto !important;
+        }
+
+        .menu-table tr {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        .menu-table td {
+            display: block !important;
+            text-align: center !important;
+        }
+
+        .icon-td {
+            padding-bottom: 4px !important;
         }
     }
    </style>
@@ -91,59 +115,54 @@
                                 </td>
                             </tr>
                             
+                           <!-- SECCIÓN DE BOTONES -->
                             <tr>
                                 <td align="center" style="padding-top: 20px;">
-                                <table cellpadding="0" cellspacing="0" border="0" style="background-color: #297688; border-radius: 20px; padding: 10px 30px;">
-                                    <tr>
-                                    <!-- Botón: Publicaciones -->
-                                    <td align="center" style="padding: 10px 15px;">
-                                        <a href="#" style="text-decoration: none;">
-                                        <table cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                            <td valign="middle" style="padding-right: 6px;">
-                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-publicaciones.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="background-color: #297688; border-radius: 20px; padding: 10px 30px; width: 100%;">
+                                        <tr>
+                                        <!-- Botón 1 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-publicaciones.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Publicaciones</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
                                             </td>
-                                            <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
-                                                Publicaciones
+                                    
+                                            <!-- Botón 2 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-tablero.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Tablero de Control</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
                                             </td>
-                                            </tr>
-                                        </table>
-                                        </a>
-                                    </td>
-                            
-                                    <!-- Botón: Tablero de Control -->
-                                    <td align="center" style="padding: 10px 15px;">
-                                        <a href="#" style="text-decoration: none;">
-                                        <table cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                            <td valign="middle" style="padding-right: 6px;">
-                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-tablero.png" alt="Tablero" width="20" height="20" style="display: block;">
+                                    
+                                            <!-- Botón 3 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Eventos y Memorias</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
                                             </td>
-                                            <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
-                                                Tablero de Control
-                                            </td>
-                                            </tr>
-                                        </table>
-                                        </a>
-                                    </td>
-                            
-                                    <!-- Botón: Eventos y Memorias -->
-                                    <td align="center" style="padding: 10px 15px;">
-                                        <a href="#" style="text-decoration: none;">
-                                        <table cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                            <td valign="middle" style="padding-right: 6px;">
-                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Eventos" width="20" height="20" style="display: block;">
-                                            </td>
-                                            <td valign="middle" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">
-                                                Eventos y Memorias
-                                            </td>
-                                            </tr>
-                                        </table>
-                                        </a>
-                                    </td>
-                                    </tr>
-                                </table>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                             
