@@ -1,0 +1,71 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+  
+  
+/* Estructura principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+  
+/* Tipografía general */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+}
+  
+/* Clases de utilidad para email */
+.stack {
+    display: block;
+    width: 100% !important;
+}
+  
+.stack td {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    padding-bottom: 10px !important;
+}
+  
+/* Responsive para mobile */
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 100% !important;
+    }
+  
+    .stack td {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+  
+    .hide-on-mobile {
+      display: none !important;
+    }
+  
+    .full-width {
+      width: 100% !important;
+      display: block !important;
+    }
+}
+  

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Email</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f6f6f6;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Estructura principal */
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    }
+    h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #666;
+    }
+    /* Clases de utilidad para email */
+    .stack {
+        display: block;
+        width: 100% !important;
+    }
+    .stack td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        padding-bottom: 10px !important;
+    }
+    /* Responsive para mobile */
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100% !important;
+        }
+        .stack td {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .hide-on-mobile {
+            display: none !important;
+        }
+        .full-width {
+            width: 100% !important;
+            display: block !important;
+        }
+        .menu-btn {
+            display: block !important;
+            width: 90% !important;
+            text-align: center !important;
+        }
+
+        .menu-table {
+            margin: 0 auto !important;
+        }
+
+        .menu-table tr {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        .menu-table td {
+            display: block !important;
+            text-align: center !important;
+        }
+
+        .icon-td {
+            padding-bottom: 4px !important;
+        }
+        .noticia-responsive {
+            display: block !important;
+            width: 100% !important;
+        }
+        .noticia-responsive td {
+            display: block !important;
+            width: 90% !important;
+            max-width: 400px !important;
+            margin: 0 auto !important;
+            text-align: center !important;
+            padding: 12px 0 !important;
+        }
+        .noticia-responsive img {
+            border-radius: 12px !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+        .hide-on-mobile {
+            display: none !important;
+        }
+        .only-mobile {
+            display: table-row !important;
+        }
+    }
+   </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f6f6f6;">
+  <center>
+    <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f6f6f6">
+        <tr>
+            <td align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td>
+            <![endif]-->
+            <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; background:#ffffff;">
+                <tr>
+                <td style="padding-top: 20px;">
+                    
+                    <!-- HEADER -->
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-radius: 20px 20px 0 0; overflow: hidden; background-color: #025e73;">
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" style="font-family: Arial, sans-serif; color: #ffffff;">
+                                <span style="display: block; font-size: 36px; font-weight: bold; font-style: italic; line-height: 36px;">Defencarga</span>
+                                <span style="display: block; font-size: 14px; font-weight: normal; line-height: 16px;">Juntos por el país</span>
+                                </td>
+                            </tr>
+                            
+                           <!-- SECCIÓN DE BOTONES -->
+                            <tr>
+                                <td align="center" style="padding-top: 20px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="background-color: #297688; border-radius: 20px; padding: 10px 30px; width: 100%;">
+                                        <tr>
+                                        <!-- Botón 1 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-publicaciones.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Publicaciones</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
+                                            </td>
+                                    
+                                            <!-- Botón 2 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-tablero.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Tablero de Control</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
+                                            </td>
+                                    
+                                            <!-- Botón 3 -->
+                                            <td class="menu-btn" align="center" style="padding: 10px 15px;">
+                                                <a href="#" style="text-decoration: none;">
+                                                <table cellpadding="0" cellspacing="0" border="0" align="center" class="menu-table">
+                                                    <tr>
+                                                    <td class="icon-td" style="padding-right: 6px;" align="center">
+                                                        <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Publicaciones" width="20" height="20" style="display: block;">
+                                                    </td>
+                                                    <td class="text-td" style="font-size: 14px; font-family: Arial, sans-serif; color: #ffffff;">Eventos y Memorias</td>
+                                                    </tr>
+                                                </table>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        </td>
+                    </tr>
+                    </table>
+                    <!-- FIN HEADER -->
+
+                    <!-- SECCIÓN HERO -->
+                    <tr>
+                        <td align="center">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #025e73; border-radius: 0 0 20px 20px;">
+                                <tr>
+                                <td align="center" style="padding: 30px 20px 0 20px;">
+                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/banner-fondo-feria.png" alt="Feria de Sostenibilidad 2025" width="560" style="width: 100%; max-width: 560px; border-radius: 20px; display: block;">
+                                </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td align="left" style="padding: 30px 20px 0 20px; font-family: Arial, sans-serif;">
+                                        <h2 style="margin: 0; font-size: 30px; font-weight: bold; color: #ffffff;">
+                                            Se acerca la Feria de Sostenibilidad versión 2025
+                                        </h2>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td align="left" style="padding: 15px 20px 0 20px; font-family: Arial, sans-serif;">
+                                        <p style="margin: 0; font-size: 16px; line-height: 24px; color: #ffffff;">
+                                            Haciendo honor al gran éxito de la versión 2024 para este año tendremos grandes invitados del sector nacional y 2 invitados internacionales líderes en la industria, además de nuevas dinámicas que harán de este un evento inolvidable.
+                                        </p>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                <td align="left" style="padding: 20px 20px 40px 20px;">
+                                    <!-- Botón -->
+                                    <table cellpadding="0" cellspacing="0" border="0" align="left" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
+                                        <tr>
+                                          <td align="left" style="padding: 10px 20px;">
+                                            <a href="#" style="font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none;">
+                                              Sigue leyendo <span style="font-size: 16px;">→</span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                    </table>                                      
+                                </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+    
+                </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+            </table>
+            <![endif]-->
+            </td>
+        </tr>
+        
+        <!-- SECCIÓN ACTUALIDAD -->
+        <tr>
+            <td align="left" style="padding: 40px 30px 10px 20px; font-family: Arial, sans-serif;">
+                <h2 style="margin: 0; font-size: 25px; font-weight: bold; color: #005A64;">Actualidad</h2>
+            </td>
+        </tr>
+    
+        <!-- NOTICIA 1 -->
+        <tr class="noticia-responsive">
+            <td align="center" style="padding: 20px 20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" width="50%" align="center">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-1.jpg" alt="Noticia 1" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                </td>
+                <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
+                    <p style="margin: 0; font-weight: bold; line-height: 20px;">Ecopetrol pone en marcha una nueva planta para producir diésel más limpio</p>
+                    <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Ecopetrol anunció que se puso en marcha una nueva unidad de Hidrocraqueo Moderado (HCM) en la Refinería de Barrancabermeja por medio de la cual se produce diésel más limpio el cual equivale a 10 partes por millón (ppm) de azufre.</p>
+                    <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        
+        <!-- NOTICIA 2 - VERSIÓN DESKTOP -->
+        <tr class="hide-on-mobile">
+            <td align="center" style="padding: 20px 10px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
+                    <p style="margin: 0; font-weight: bold; line-height: 20px;">Finalizan obras del túnel que permitirá poner en servicio la UF2 de la vía Pacífico 1</p>
+                    <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Las obras del túnel que permitirá la puesta en servicio de la Unidad Funcional 2 (UF2) de la Autopista Conexión Pacífico 1 han finalizado.</p>
+                    <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                </td>
+                <td valign="top" width="50%" align="center">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-2.jpg" alt="Noticia 2" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        
+        <!-- NOTICIA 2 - VERSIÓN MOBILE -->
+        <tr class="only-mobile noticia-responsive" style="display:none;">
+            <td align="center" style="padding: 20px 10px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" width="100%" align="center">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-2.jpg" alt="Noticia 2" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                </td>
+                </tr>
+                <tr>
+                <td valign="top" width="100%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
+                    <p style="margin: 0; font-weight: bold; line-height: 20px;">Finalizan obras del túnel que permitirá poner en servicio la UF2 de la vía Pacífico 1</p>
+                    <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Las obras del túnel que permitirá la puesta en servicio de la Unidad Funcional 2 (UF2) de la Autopista Conexión Pacífico 1 han finalizado.</p>
+                    <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>  
+        
+        <!-- NOTICIA 3 -->
+        <tr class="noticia-responsive">
+            <td align="center" style="padding: 20px 20px 40px 20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" width="50%" align="center">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-3.jpg" alt="Noticia 3" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                </td>
+                <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
+                    <p style="margin: 0; font-weight: bold; line-height: 20px;">Más de $19,2 billones de las vías 4G se quedarían en riesgo por proyectos en vilo</p>
+                    <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Tras 10 años desde el inicio de la construcción de algunos de los proyectos de vías de Cuarta Generación (4G), estos empiezan a mostrar dificultades por los ambientales, sociales y económicos…</p>
+                    <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+
+        <!-- SECCIÓN OTRAS NOTICIAS -->
+        <tr>
+            <td align="left" style="padding: 40px 30px 10px 20px; font-family: Arial, sans-serif;">
+                <h2 style="margin: 0; font-size: 25px; font-weight: bold; color: #005A64;">Otras noticias</h2>
+            </td>
+        </tr>
+  
+        <!-- NOTICIA 1 -->
+        <tr>
+            <td align="center" style="padding: 20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ecf4f6; border-radius: 20px;">
+                <tr>
+                    <td style="padding: 20px; font-family: Arial, sans-serif; color: #333;">
+                        <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Paro armado del ELN en Chocó genera graves afectaciones a la economía</p>
+                        <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Luego del anuncio del Ejército de Liberación Nacional (ELN) de un paro armado por 72 horas en el departamento del Chocó, ha habido angustia y zozobra entre la comunidad de los habitantes.</p>
+                        <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+  
+        <!-- NOTICIA 2 -->
+        <tr>
+            <td align="center" style="padding: 20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ecf4f6; border-radius: 20px;">
+                <tr>
+                    <td style="padding: 20px; font-family: Arial, sans-serif; color: #333;">
+                        <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">‘Yo creo que no se necesitan más impuestos, sino más controles’: Director de la Dian</p>
+                        <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">En medio de la expectativa que tiene el país por saber si el presidente Gustavo Petro y su equipo económico se la jugarán por una nueva reforma tributaria en la recta final de su administración.</p>
+                        <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+  
+        <!-- NOTICIA 3 -->
+        <tr>
+            <td align="center" style="padding: 20px 20px 40px 20px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ecf4f6; border-radius: 20px;">
+                <tr>
+                    <td style="padding: 20px; font-family: Arial, sans-serif; color: #333;">
+                        <p style="margin: 0; font-weight: bold; font-size: 18px; color: #000;">Nombran a Luis Eduardo Acosta como presidente en encargo de la ANI</p>
+                        <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Luis Eduardo Acosta Medina se posesionó como nuevo presidente (e) de la Agencia Nacional de Infraestructura (ANI). El funcionario asumirá el cargo en reemplazo de Francisco Ospina Ramírez, quien presentó su renuncia tras casi un año de haber sido nombrado por el exministro William Camargo.</p>
+                        <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+
+        <!-- SECCIÓN OFERTA ACADÉMICA -->
+        <tr>
+            <td align="center" style="padding: 40px 10px; background-color: #018cb3; border-radius: 20px;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px;">
+                    <!-- TÍTULO -->
+                    <tr>
+                        <td align="center" style="font-family: Arial, sans-serif; color: #ffffff; font-size: 25px; font-weight: bold; padding-bottom: 30px;">
+                            Oferta académica
+                        </td>
+                    </tr>
+                    
+                    <!-- CURSO 1 Y 2 -->
+                    <tr>
+                        <td align="center">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <!-- CURSO 1 -->
+                                    <td valign="top" width="50%" style="padding: 10px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#34a3c1; border-radius: 20px; overflow: hidden;">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/oa-1.jpg" alt="Curso 1" width="100%" style="border-radius: 20px; display: block;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 20px; font-family: Arial, sans-serif; font-size: 14px;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                        <td style="padding-right: 6px;">
+                                                            <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
+                                                        </td>
+                                                        <td style="color: #ffffff; font-size: 14px;">Marzo 12, 2025</td>
+                                                        </tr>
+                                                    </table>
+                        
+                                                    <p style="margin: 16px 0 16px 0; font-weight: bold; line-height: 22px; font-size: 18px; color: #ffffff;">Diplomado en Gestión de la Cadena de Suministro</p>
+                                    
+                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 24px; font-family: Arial, sans-serif; font-size: 14px;">
+                                                            <a href="#" style="font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; white-space: nowrap;">
+                                                              Inscripciones <span style="font-size: 16px;">→</span>
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                    </table>                                                                                          
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                        
+                                    <!-- CURSO 2 -->
+                                    <td valign="top" width="50%" style="padding: 10px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #34a3c1; border-radius: 20px; overflow: hidden;">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/oa-2.jpg" alt="Curso 2" width="100%" style="border-radius: 20px; display: block;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 20px; font-family: Arial, sans-serif; font-size: 14px;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="padding-right: 6px;">
+                                                                <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/icon-eventos.png" alt="Fecha" width="16" height="16" style="display: block;">
+                                                            </td>
+                                                            <td style="color: #ffffff; font-size: 14px;">Junio 16, 2025</td>
+                                                        </tr>
+                                                    </table>
+                            
+                                                    <p style="margin: 16px 0 16px 0; font-weight: bold; line-height: 22px; font-size: 18px; color: #ffffff;">Curso de Operador Logístico en Puerto</p>
+                            
+                                                    <table cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: separate; border-radius: 25px; background-color: #eb6a17;">
+                                                        <tr>
+                                                          <td align="center" style="padding: 10px 24px; font-family: Arial, sans-serif; font-size: 14px;">
+                                                            <a href="#" style="font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; white-space: nowrap;">
+                                                              Inscripciones <span style="font-size: 16px;">→</span>
+                                                            </a>
+                                                          </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top: 30px;">
+                    <tr>
+                      <td style="border: 1px solid #ffffff; border-radius: 25px; padding: 8px 24px; font-family: Arial, sans-serif; font-size: 16px;" align="center">
+                        <a href="#" style="color: #ffffff; font-weight: bold; text-decoration: none; display: inline-block;">
+                          Todas las ofertas <span style="font-size: 18px; margin-left: 10px;">＋</span>
+                        </a>
+                      </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- ESPACIO ENTRE SECCIONES -->
+        <tr>
+            <td height="30" style="line-height: 40px; font-size: 0;">&nbsp;</td>
+        </tr>
+  
+        <!-- FOOTER -->
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td bgcolor="#009FC2" width="16.6%" height="6"></td>
+                        <td bgcolor="#004C62" width="16.6%" height="6"></td>
+                        <td bgcolor="#EB773C" width="16.6%" height="6"></td>
+                        <td bgcolor="#F7C340" width="16.6%" height="6"></td>
+                        <td bgcolor="#018CB3" width="16.6%" height="6"></td>
+                        <td bgcolor="#EB773C" width="16.6%" height="6"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" bgcolor="#383838" style="background-color: #383838; padding: 40px 20px; border-radius: 0 0 30px 30px;">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px;">
+            
+                    <!-- Logo -->
+                    <tr>
+                        <td align="center" style="font-family: Arial, sans-serif;">
+                            <p style="font-size: 28px; font-weight: bold; font-style: italic; margin: 0; color: #ffffff;">Defencarga</p>
+                            <p style="margin: 0; font-size: 12px; line-height: 16px; color: #ffffff;">Juntos por el país</p>
+                        </td>
+                    </tr>
+            
+                    <!-- Íconos de redes -->
+                    <tr>
+                        <td align="center" style="padding: 20px 0;">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="padding: 0 8px;">
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/twitter.png" alt="Twitter" width="20" style="display: block;"></a>
+                                    </td>
+                                    <td style="padding: 0 8px;">
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/instagram.png" alt="Instagram" width="20" style="display: block;"></a>
+                                    </td>
+                                    <td style="padding: 0 8px;">
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/facebook.png" alt="Facebook" width="20" style="display: block;"></a>
+                                    </td>
+                                    <td style="padding: 0 8px;">
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/youtube.png" alt="YouTube" width="20" style="display: block;"></a>
+                                    </td>
+                                    <td style="padding: 0 8px;">
+                                        <a href="#"><img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/linkedin.png" alt="LinkedIn" width="20" style="display: block;"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+            
+                    <!-- Contactos -->
+                    <tr>
+                        <td align="center" style="font-family: Arial, sans-serif; font-size: 13px; color: #ffffff;">
+                            <p style="margin: 0;">
+                                <a href="https://www.defencarga.org" style="color: #ffffff; text-decoration: none;">www.defencarga.org</a>
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a href="mailto:comunicaciones@defencarga.org" style="color: #ffffff; text-decoration: none;">comunicaciones@defencarga.org</a>
+                            </p>
+                        </td>
+                    </tr>
+            
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td height="20" style="line-height: 20px; font-size: 0;">&nbsp;</td>
+        </tr>
+    </table>
+  </center>
+</body>
+</html>
