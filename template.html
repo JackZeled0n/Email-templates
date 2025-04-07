@@ -102,16 +102,11 @@
             width: 100% !important;
             height: auto !important;
         }
-
-        .invert-mobile {
-            display: flex !important;
-            flex-direction: column-reverse !important;
+        .hide-on-mobile {
+            display: none !important;
         }
-        .invert-mobile td {
-            width: 100% !important;
-            display: block !important;
-            text-align: center !important;
-            padding: 12px 0 !important;
+        .only-mobile {
+            display: table-row !important;
         }
     }
    </style>
@@ -279,11 +274,11 @@
             </td>
         </tr>
         
-        <!-- NOTICIA 2 -->
-        <tr class="noticia-responsive">
+        <!-- NOTICIA 2 - VERSIÓN DESKTOP -->
+        <tr class="hide-on-mobile">
             <td align="center" style="padding: 20px 10px;">
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr class="invert-mobile">
+                <tr>
                 <td valign="top" width="50%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
                     <p style="margin: 0; font-weight: bold; line-height: 20px;">Finalizan obras del túnel que permitirá poner en servicio la UF2 de la vía Pacífico 1</p>
                     <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Las obras del túnel que permitirá la puesta en servicio de la Unidad Funcional 2 (UF2) de la Autopista Conexión Pacífico 1 han finalizado.</p>
@@ -296,6 +291,26 @@
             </table>
             </td>
         </tr>
+        
+        <!-- NOTICIA 2 - VERSIÓN MOBILE -->
+        <tr class="only-mobile noticia-responsive" style="display:none;">
+            <td align="center" style="padding: 20px 10px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" width="100%" align="center">
+                    <img src="https://raw.githubusercontent.com/JackZeled0n/Email-templates/refs/heads/feature/first-template/img/act-2.jpg" alt="Noticia 2" width="100%" style="max-width: 100%; border-radius: 12px; display: block;">
+                </td>
+                </tr>
+                <tr>
+                <td valign="top" width="100%" style="padding: 10px 20px; font-family: Arial, sans-serif; color: #333;">
+                    <p style="margin: 0; font-weight: bold; line-height: 20px;">Finalizan obras del túnel que permitirá poner en servicio la UF2 de la vía Pacífico 1</p>
+                    <p style="margin: 10px 0; font-size: 14px; line-height: 20px;">Las obras del túnel que permitirá la puesta en servicio de la Unidad Funcional 2 (UF2) de la Autopista Conexión Pacífico 1 han finalizado.</p>
+                    <a href="#" style="font-size: 14px; font-weight: bold; color: #00A1B3; text-decoration: none; border: 2px solid #00A1B3; padding: 8px 16px; border-radius: 20px; display: inline-block;">Sigue leyendo →</a>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>  
         
         <!-- NOTICIA 3 -->
         <tr class="noticia-responsive">
